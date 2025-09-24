@@ -13,3 +13,8 @@ export const userValidationRules = [
         }
     }),
 ];
+
+export const postValidationRules = [
+    body('title').notEmpty().escape().withMessage('Title is required'),
+    body('content').notEmpty().withMessage('Content is required'),
+];
