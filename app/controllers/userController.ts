@@ -1,6 +1,6 @@
-import { Request, Response, NextFunction } from "express";
-import { index, store, destroy } from "../models/user";
 import { validationResult } from "express-validator";
+import { index, store, destroy } from "../models/user";
+import { Request, Response, NextFunction } from "express";
 
 export const getUsers = async (req: Request, res: Response, next: NextFunction) => {
     try {
